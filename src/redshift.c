@@ -869,7 +869,7 @@ run_continual_mode(const location_provider_t *provider,
 
 	/* Make an initial transition from 6500K */
 	int short_trans_delta = -1;
-	int short_trans_len = 10;
+	int short_trans_len = 1;
 
 	/* Amount of adjustment to apply. At zero the color
 	   temperature will be exactly as calculated, and at one it
@@ -947,7 +947,7 @@ run_continual_mode(const location_provider_t *provider,
 					/* Make a short transition
 					   back to 6500K */
 					short_trans_delta = 1;
-					short_trans_len = 2;
+					short_trans_len = 1;
 				}
 
 				done = 1;
